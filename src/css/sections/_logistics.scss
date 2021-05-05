@@ -1,0 +1,48 @@
+.logistics {
+  padding: 9rem 0;
+  background: #F1F1F1;
+
+  &__title {
+    margin-bottom: 7.6rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1.6rem;
+  }
+
+  &__item {
+    padding: 1.6rem;
+    width: 50%;
+    height: 58.2rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__text-wrapper {
+    width: 42.8rem;
+    height: 17.3rem;
+    padding: 2.7rem 5rem 2.7rem 2rem;
+    background: rgba(0, 161, 228, 0.8);
+    color: #F7F7F7;
+  }
+
+  &__low-title{ 
+    margin-bottom: 1.4rem;
+    font-size: 2.4rem;
+    line-height: 105%;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 116%;
+  }
+}

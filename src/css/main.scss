@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'normalize.css';
 @import 'mixins';
 @import 'fonts';
 @import 'animation';
@@ -11,7 +10,10 @@
 @import 'base';
 
 // blocks
-@import 'blocks/*';
+@import 'blocks/container';
+@import 'blocks/title';
 
 // sections
-@import 'sections/*';
+@import 'sections/wrapper';
+@import 'sections/logistics';
+
