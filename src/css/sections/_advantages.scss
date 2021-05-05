@@ -1,0 +1,46 @@
+.advantages {
+  margin-top: -9.1rem; 
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -2.5rem;
+  }
+
+  &__item {
+    padding: 2.5rem;
+    width: calc(100%/3);
+  }
+
+  &__wrapper {
+    position: relative;
+    min-height: 25.8rem;
+    width: 100%;
+    padding: 8.2rem 2.9rem 2.4rem 8.8rem;
+    background: #EDEDED;
+    color: #161515;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 4.9rem;
+      top: 8.2rem;
+      width: 1.1rem;
+      height: 10.6rem;
+      background: #00A1E4;
+    }
+  }
+
+  &__low-title {
+    margin-bottom: 1.5rem;
+    font-size: 2.4rem;
+    line-height: 116%;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 116%;
+  }
+}
