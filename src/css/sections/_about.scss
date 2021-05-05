@@ -1,0 +1,67 @@
+.about {
+  &__container {
+    max-width: 192rem;
+    display: flex;
+    padding: 0;
+  }
+
+  &__left {
+    position: relative;
+    width: 52%;
+    background: #302F2F;
+  }
+
+  &__right {
+    padding: 9.7rem 0 0 11.7rem;
+  }
+
+  &__text {
+    position: relative;
+    max-width: 49rem;
+    margin-bottom: ;
+    font-size: 1.8rem;
+    line-height: 116%;
+    color: #161515;
+
+    & p {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -6rem;
+      top: 0;
+      width: 1.1rem;
+      height: 100%;
+      background: #00A1E4;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.5rem;
+  }
+
+  &__author {
+    margin-left: auto;
+    width: max-content;
+      line-height: 116%;
+
+    &-name {
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 2.4rem;
+      color: #161515;
+    }
+
+    &-rank {
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: #0095DA;
+    }
+  }
+}
