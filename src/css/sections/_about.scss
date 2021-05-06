@@ -1,14 +1,79 @@
 .about {
+  $self: &;
+  
   &__container {
+    position: relative;
+    height: 63.4rem;
     max-width: 192rem;
     display: flex;
     padding: 0;
+    overflow: hidden;
   }
 
   &__left {
-    position: relative;
     width: 52%;
     background: #302F2F;
+  }
+
+  &__layover {
+    position: absolute;
+    left: 16rem;
+  }
+
+  &__triangle:last-child {
+    margin-left: -17rem;
+  }
+
+  &__man {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    min-height: 78.2rem;
+    transform: translateX(-35rem);
+    bottom: -11rem;
+    width: 47.3rem;
+    transition: transform 1s;
+
+    &:hover {
+      transform: translateX(-66.3rem);
+    }
+  }
+
+  &__overflow {
+    position: absolute;
+    top: 21.5rem;
+    left: 50%;
+    transform: translateX(-47rem);
+    overflow: hidden;
+  }
+
+  &__block {
+    width: 42.6rem;
+    height: 11.6rem;
+    padding: 3rem 8.4rem 3rem 0;
+    border: 2px solid #00AAEB; 
+    text-align: right;
+    transform: translateX(100%);
+    transition: transform 1s;
+
+    #{$self}__man:hover~#{$self}__overflow & {
+      transform: translateX(0);
+    }
+    
+    &-name {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 116%;
+      text-transform: uppercase;
+      color: #0095DA;
+    }
+
+    &-rank {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 116%;
+      color: #F2F2F2;
+    }
   }
 
   &__right {
@@ -18,7 +83,7 @@
   &__text {
     position: relative;
     max-width: 49rem;
-    margin-bottom: ;
+    margin-bottom: 3.5rem;
     font-size: 1.8rem;
     line-height: 116%;
     color: #161515;
@@ -44,6 +109,7 @@
 
   &__title {
     margin-bottom: 3.5rem;
+    line-height: 116%;
   }
 
   &__author {
